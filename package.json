@@ -1,0 +1,30 @@
+{
+  "name": "boiler_plate",
+  "version": "1.0.0",
+  "description": "Node.js Boiler plate for kick start ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/app.js",
+    "build": "rm -rf dist && npm run build-prod",
+    "build-prod": "babel src --out-dir dist",
+    "serve": "node dist/app.js",
+    "dev": "babel-node src/app.js"
+  },
+  "author": "Sachin Talekar : sachintalekar@fitternity.com",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "ioredis": "^4.14.1",
+    "mongoose": "^5.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "nodemon": "^2.0.2"
+  }
+}
